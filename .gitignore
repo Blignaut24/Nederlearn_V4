@@ -1,0 +1,20 @@
+# ===============================
+# GITIGNORE CONFIGURATION FILE
+# ===============================
+
+# Virtual Environment
+# ------------------
+env/        # Virtual environment directory
+            # Excluded because:
+            # - Machine-specific configuration
+            # - Large file size
+            # - Each dev creates their own
+
+# Security & Configuration
+# -----------------------
+.env        # Environment configuration file
+            # Contains sensitive data:
+            # - API credentials
+            # - Security tokens
+            # - Database credentials
+            # IMPORTANT: Never commit to version control
