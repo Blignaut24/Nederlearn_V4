@@ -25,7 +25,15 @@ SECRET_KEY = "django-insecure-fqm8hrf&rz)j2uq(b%mq(y3v_^*(=y6kk(w_1-%3dhzn(k&dat
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+# Define which hosts are allowed to access the application
+# This is a security measure to prevent HTTP Host header attacks
+ALLOWED_HOSTS = [
+    'nederlearn-v4-7a71c602fd08.herokuapp.com',  # Main Heroku app domain
+    'localhost',                                  # Local development server
+    '.herokuapp.com',                            # All Heroku subdomains
+    'blignaut24-nederlearnv4-k3vz2ssudh9.ws-eu117.gitpod.io'  # Gitpod workspace
+]
+
 
 
 # Application definition
