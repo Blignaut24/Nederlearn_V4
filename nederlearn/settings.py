@@ -10,17 +10,30 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+# ---------------------
+# Standard library imports
+# ---------------------
 from pathlib import Path
+import os
+import dj_database_url
+from django.contrib.messages import constants as messages
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+if os.path.isfile("env.py"):
+    import env
+
+# ---------------------
+# Build paths inside the project
+# ---------------------
 BASE_DIR = Path(__file__).resolve().parent.parent
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-fqm8hrf&rz)j2uq(b%mq(y3v_^*(=y6kk(w_1-%3dhzn(k&dat"
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -36,7 +49,9 @@ ALLOWED_HOSTS = [
 
 
 
+# ---------------------
 # Application definition
+# ---
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -45,6 +60,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'cloudinary',
+    "blog",
+    
 ]
 
 MIDDLEWARE = [
