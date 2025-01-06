@@ -36,7 +36,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Define which hosts are allowed to access the application
 # This is a security measure to prevent HTTP Host header attacks
@@ -59,8 +59,9 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    "cloudinary_storage",
     "django.contrib.staticfiles",
-    'cloudinary',
+    "cloudinary",
     "blog",
     
 ]
@@ -99,12 +100,30 @@ WSGI_APPLICATION = "nederlearn.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+
+# ---------------------
+# Database
+# Some sections are commented out right now, but we're keeping them
+# for later. They're like a guide we can use when we need. This includes
+# the Database section. If you want more details, check out Django's
+# database guide. If we need this section for work we're doing locally,
+# we can start using it again.
+# <https://docs.djangoproject.com/en/4.2/ref/settings/#databases>
+# ---------------------
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
+
+
+# Set up the production database using dj-database-url.
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
+
 
 
 # Password validation
@@ -125,25 +144,31 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+# ---------------------
 # Internationalization
-# https://docs.djangoproject.com/en/5.1/topics/i18n/
-
-LANGUAGE_CODE = "en-us"
-
-TIME_ZONE = "UTC"
-
+# <https://docs.djangoproject.com/en/3.2/topics/i18n/>
+# ---------------------
+LANGUAGE_CODE = 'en-us'
+TIME_ZONE = 'UTC'
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
 
-
+# ---------------------
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
+# <https://docs.djangoproject.com/en/3.2/howto/static-files/>
+# ---------------------
+STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-STATIC_URL = "static/"
-
+# ---------------------
 # Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
+# <https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field>
+# ----------------------
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+

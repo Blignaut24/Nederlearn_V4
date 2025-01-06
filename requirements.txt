@@ -1,5 +1,35 @@
-asgiref==3.8.1
-Django==5.1.4
-gunicorn==20.1.0
-sqlparse==0.5.3
-tzdata==2024.2
+# Required Software Packages
+# ------------------------
+
+# Basic Website Tools
+# ------------------
+asgiref==3.7.2            # Helps Django handle web requests
+Django==3.2.23            # Main website building tool
+sqlparse==0.4.4           # Helps work with databases
+
+# Storage Tools
+# ------------
+dj-database-url==0.5.0    # Helps connect to databases
+psycopg2==2.9.9           # Connects to PostgreSQL database
+cloudinary==1.37.0        # Stores files online
+dj3-cloudinary-storage==0.0.6  # Connects Django to Cloudinary
+
+# Website Hosting Tools
+# -------------------
+gunicorn==21.2.0          # Runs the website
+packaging==24.2           # Manages software packages
+
+# Internet Tools
+# -------------
+requests==2.32.3          # Sends internet requests
+urllib3==1.26.15          # Handles web links
+certifi==2024.12.14       # Handles security
+charset-normalizer==3.4.1 # Handles text encoding
+idna==3.10               # Handles web addresses
+
+# Helper Tools
+# -----------
+pytz==2023.3.post1        # Handles time zones
+setuptools==75.6.0        # Installs software
+six==1.17.0              # Makes code work everywhere
+tzdata==2024.2           # Time zone information
