@@ -25,8 +25,7 @@ if os.path.isfile("env.py"):
 # Build paths inside the project
 # ---------------------
 BASE_DIR = Path(__file__).resolve().parent.parent
-TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
-
+TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 
 
 # Quick-start development settings - unsuitable for production
@@ -41,12 +40,9 @@ DEBUG = True
 # Define which hosts are allowed to access the application
 # This is a security measure to prevent HTTP Host header attacks
 ALLOWED_HOSTS = [
-    'nederlearn-v4-7a71c602fd08.herokuapp.com',  # Main Heroku app domain
-    'localhost',                                  # Local development server
-    '.herokuapp.com',                            # All Heroku subdomains
-    'blignaut24-nederlearnv4-k3vz2ssudh9.ws-eu117.gitpod.io'  # Gitpod workspace
+    "nederlearn-v4.herokuapp.com",  # Main Heroku app domain
+    "localhost",  # Local development server
 ]
-
 
 
 # ---------------------
@@ -63,7 +59,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cloudinary",
     "blog",
-    
 ]
 
 MIDDLEWARE = [
@@ -111,19 +106,16 @@ WSGI_APPLICATION = "nederlearn.wsgi.application"
 # <https://docs.djangoproject.com/en/4.2/ref/settings/#databases>
 # ---------------------
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
-#}
+# }
 
 
 # Set up the production database using dj-database-url.
-DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-}
-
+DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 
 # Password validation
@@ -148,8 +140,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # <https://docs.djangoproject.com/en/3.2/topics/i18n/>
 # ---------------------
-LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = "en-us"
+TIME_ZONE = "UTC"
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
@@ -158,17 +150,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # <https://docs.djangoproject.com/en/3.2/howto/static-files/>
 # ---------------------
-STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+STATIC_URL = "/static/"
 
 # ---------------------
 # Default primary key field type
 # <https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field>
 # ----------------------
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

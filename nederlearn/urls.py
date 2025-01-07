@@ -19,4 +19,5 @@ from django.urls import path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+      path("blog/", blog_views.my_blog, name='blog'), # test ci lesson
 ]
