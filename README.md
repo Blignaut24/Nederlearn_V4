@@ -9,7 +9,7 @@ NederLearn is an exciting companion in your journey to learn the Dutch language 
 ## Table of Content
 
 - [NederLearn](#nederlearn)
-  - ["Embrace the Adventure, Connect the World - NederLearn, Where Learning Dutch Becomes a Thrilling Journey"](#embrace-the-adventure-connect-the-world---nederlearn-where-learning-dutch-becomes-a-thrilling-journey)
+    - ["Embrace the Adventure, Connect the World - NederLearn, Where Learning Dutch Becomes a Thrilling Journey"](#embrace-the-adventure-connect-the-world---nederlearn-where-learning-dutch-becomes-a-thrilling-journey)
   - [Table of Content](#table-of-content)
   - [Project Overview](#project-overview)
     - [User Goals](#user-goals)
@@ -180,48 +180,48 @@ The NederLearn app employs the MoSCoW method to categorize its functionalities i
 <summary>Epic 1: User Authentication & Profile Management</summary>
 This Epic deals with handling user accounts, including registering, signing in and out, and modifying user profiles.
 
-- User Account Registration [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=User+Account+Registration)
-- Easy Login from Landing Page [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Easy+Login+from+Landing+Page)
-- Log out of User account [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Log+out+of+User+account)
-- Create, Update & Delete User Profile [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Delete+User+Profile)
-- Password Reset [(Won't Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Password+Reset)
+- User Account Registration [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=User+Account+&pane=issue&itemId=92339719&issue=Blignaut24%7CNederlearn_V3%7C5)
+- Easy Login from Landing Page [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=login&pane=issue&itemId=92339607&issue=Blignaut24%7CNederlearn_V3%7C4)
+- Log out of User account [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Log+out+of+User+account&pane=issue&itemId=92339484&issue=Blignaut24%7CNederlearn_V3%7C3)
+- Create, Update & Delete User Profile [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=User+Profile+&pane=issue&itemId=92339372&issue=Blignaut24%7CNederlearn_V3%7C2)
+- Password Reset [(Won't Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Password+Reset&pane=issue&itemId=92339037&issue=Blignaut24%7CNederlearn_V3%7C1)
 
 </details>
 <details>
 <summary>Epic 2: Blog Interaction & Content Management</summary>
 This Epic focuses on main blog features like making, reading, changing, and removing posts, and engaging with posts by commenting and liking.
 
-- User Create, Edit & Delete Blog Posts [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=USER+STORY%3A+User+Create%2C+Update+%26+Delete+Blog+Posts)
-- Comment Blog Posts [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Comment+Blog+Posts)
-- Like/ Unlike Blog Posts [(Should Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Unlike+Blog+Posts)
-- View Other Users' Profiles [(Should Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=View+Other+Users+)
-- See Post Overview [(Should Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Post+Overview&pane=issue&itemId=92560219&issue=Blignaut24%7CNederlearn_V4%7C9)
-- Read Full Post Detail [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Full+Post)
-- Bookmark Blog Posts [(Could Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Bookmark+Blog+Posts)
-- Receive Validating Messages [(Should Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Validating+)
+- User Create, Edit & Delete Blog Posts [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=+Blog+Posts&pane=issue&itemId=92342118&issue=Blignaut24%7CNederlearn_V3%7C13)
+- Comment Blog Posts [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Comment+Blog+Posts&pane=issue&itemId=92342023&issue=Blignaut24%7CNederlearn_V3%7C12)
+- Like/ Unlike Blog Posts [(Should Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Unlike+Blog+Posts&pane=issue&itemId=92341815&issue=Blignaut24%7CNederlearn_V3%7C11)
+- View Other Users' Profiles [(Should Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Other+Users&pane=issue&itemId=92341670&issue=Blignaut24%7CNederlearn_V3%7C10)
+- See Post Overview [(Should Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Post+Overview&pane=issue&itemId=92341521&issue=Blignaut24%7CNederlearn_V3%7C9)
+- Read Full Post Detail [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Post+Detail&pane=issue&itemId=92341360&issue=Blignaut24%7CNederlearn_V3%7C8)
+- Bookmark Blog Posts [(Could Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Bookmark&pane=issue&itemId=92340846&issue=Blignaut24%7CNederlearn_V3%7C7)
+- Receive Validating Messages [(Should Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Validating&pane=issue&itemId=92340605&issue=Blignaut24%7CNederlearn_V3%7C6)
 
 </details>
 <details>
 <summary>Epic 3: Administration & Analytics</summary>
 This section covers site management such as overseeing user accounts, regulating content, and monitoring user activity.
 
-- Admin - Full Control Over User Accounts [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Full+Control)
-- Admin - Review and Edit User-Submitted Blog Posts [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Review+and+Edit)
-- Admin - Manage and Categorize Blog Posts [(Could Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Categorize)
-- Admin - Track User Engagement and Analytics [(Won't Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Analytics)
+- Admin - Full Control Over User Accounts [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Full+Control&pane=issue&itemId=92342936&issue=Blignaut24%7CNederlearn_V3%7C17)
+- Admin - Review and Edit User-Submitted Blog Posts [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Review+and+Edit&pane=issue&itemId=92342811&issue=Blignaut24%7CNederlearn_V3%7C16)
+- Admin - Manage and Categorize Blog Posts [(Could Have)](Categorize)
+- Admin - Track User Engagement and Analytics [(Won't Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Track+User&pane=issue&itemId=92342519&issue=Blignaut24%7CNederlearn_V3%7C14)
 
 </details>
 <details>
 <summary>Epic 4: User Experience & Accessibility</summary>
 This epic concentrates on improving the site's overall user experience, including the look of the homepage, ease of navigation, and information accessibility.
 
-- Visually Appealing Landing Page [(Should Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Visually+Appealing)
-- Navigate to About Us [(Should Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Navigate+About)
-- Compatibility with different devices and operating systems [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Compatibility)
-- Navigate to Join the Club Section [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Join)
-- Navigate through a well designed website [(Must Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=designed+website)
-- Site pagination for easy navigation [(Should Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Site+pagination)
-- Receive Page Error Messages [(Won't Have)](https://github.com/users/Blignaut24/projects/17/views/2?filterQuery=Page+Error)
+- Visually Appealing Landing Page [(Should Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Visually+Appealing&pane=issue&itemId=92345054&issue=Blignaut24%7CNederlearn_V3%7C24)
+- Navigate to About Us [(Should Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=About+Us&pane=issue&itemId=92344938&issue=Blignaut24%7CNederlearn_V3%7C23)
+- Compatibility with different devices and operating systems [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=devices&pane=issue&itemId=92344825&issue=Blignaut24%7CNederlearn_V3%7C22)
+- Navigate to Join the Club Section [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=Club&pane=issue&itemId=92344684&issue=Blignaut24%7CNederlearn_V3%7C21)
+- Navigate through a well designed website [(Must Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=designed+website&pane=issue&itemId=92344445&issue=Blignaut24%7CNederlearn_V3%7C20)
+- Site pagination for easy navigation [(Should Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=pagination&pane=issue&itemId=92343727&issue=Blignaut24%7CNederlearn_V3%7C19)
+- Receive Page Error Messages [(Won't Have)](https://github.com/users/Blignaut24/projects/16/views/2?filterQuery=error&pane=issue&itemId=92343276&issue=Blignaut24%7CNederlearn_V3%7C18)
 
 </details>
 
